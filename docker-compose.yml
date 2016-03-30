@@ -10,7 +10,7 @@ nginx:
   volumes_from:
     - wwwdata
   volumes:
-    - docker/nginx/shared/sites-enabled/:/etc/nginx/conf.d/:ro
+    - ./docker/nginx/shared/sites-enabled:/etc/nginx/conf.d/:ro
   ports:
     - 8088:80
   links:
