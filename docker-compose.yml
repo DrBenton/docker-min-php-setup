@@ -17,7 +17,7 @@ nginx:
     - phpfpm:webstack_phpfpm
 
 phpfpm:
-  image: php:5.6-fpm
+  build: docker/phpfpm
   volumes_from:
     - wwwdata
   working_dir: /www-data
